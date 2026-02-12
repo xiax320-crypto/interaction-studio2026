@@ -62,7 +62,12 @@ body{
   height:500px;
   border-radius:50%;
   background:#dbdbdb;
+   cursor: pointer;
 }
+.center-circle:hover {
+  transform: translate(-50%, -50%) scale(1.03);
+}
+
 
 
 .text-ring{
@@ -82,6 +87,7 @@ body{
   transform: translate(-50%, -50%) rotate(-90deg);
    font-family: "Instrument+Serif";
    fill: #007991
+   
 }
 
 
