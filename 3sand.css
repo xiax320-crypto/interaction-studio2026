@@ -59,3 +59,37 @@ svg * {
 * {
   cursor: url("img/brownbmouse.png") 16 16, auto;
 }
+.clickhint {
+  position: fixed;
+  top: 200px;
+  right: 200px;
+  width: 200px;
+  z-index: 999;
+
+  animation: float 3s ease-in-out infinite;
+  transition: opacity 0.8s ease;
+}
+
+/* 上下浮动动画 */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 消失状态 */
+.click-hint.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.letter {
+  display: inline-block;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+
+
+.clickhint.hide {
+  opacity: 0;
+  pointer-events: none;
+}
